@@ -1,0 +1,30 @@
+{
+  "name": "node-tdd-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/babel-cli/bin/babel-node.js index.js",
+    "test": "node ./node_modules/mocha/bin/mocha --compilers js:babel-register --recursive ./**/*.spec.js"
+  },
+  "keywords": [
+    "tdd",
+    "mocha",
+    "chai",
+    "supertest"
+  ],
+  "author": "Seokjun Kim <colus001@me.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.4.2"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.14.0"
+  }
+}
